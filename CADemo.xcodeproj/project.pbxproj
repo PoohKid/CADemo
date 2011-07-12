@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C9ECB713CC9B8000614016 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9ECB613CC9B8000614016 /* UIKit.framework */; };
+		05C9ECB913CC9B8000614016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9ECB813CC9B8000614016 /* Foundation.framework */; };
+		05C9ECBB13CC9B8000614016 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9ECBA13CC9B8000614016 /* CoreGraphics.framework */; };
+		05C9ECC113CC9B8000614016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05C9ECBF13CC9B8000614016 /* InfoPlist.strings */; };
+		05C9ECC413CC9B8000614016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9ECC313CC9B8000614016 /* main.m */; };
+		05C9ECC713CC9B8000614016 /* CADemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9ECC613CC9B8000614016 /* CADemoAppDelegate.m */; };
+		05C9ECCA13CC9B8000614016 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C9ECC813CC9B8000614016 /* MainWindow.xib */; };
+		05C9ECCD13CC9B8000614016 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9ECCC13CC9B8000614016 /* RootViewController.m */; };
+		05C9ECD013CC9B8000614016 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C9ECCE13CC9B8000614016 /* RootViewController.xib */; };
+		05C9ECD713CC9B8000614016 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9ECB613CC9B8000614016 /* UIKit.framework */; };
+		05C9ECD813CC9B8000614016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9ECB813CC9B8000614016 /* Foundation.framework */; };
+		05C9ECD913CC9B8000614016 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9ECBA13CC9B8000614016 /* CoreGraphics.framework */; };
+		05C9ECE113CC9B8000614016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05C9ECDF13CC9B8000614016 /* InfoPlist.strings */; };
+		05C9ECE413CC9B8000614016 /* CADemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 05C9ECE313CC9B8000614016 /* CADemoTests.h */; };
+		05C9ECE613CC9B8000614016 /* CADemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9ECE513CC9B8000614016 /* CADemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05C9ECDA13CC9B8000614016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C9ECA913CC9B8000614016 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C9ECB113CC9B8000614016;
+			remoteInfo = CADemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C9ECB213CC9B8000614016 /* CADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C9ECB613CC9B8000614016 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		05C9ECB813CC9B8000614016 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		05C9ECBA13CC9B8000614016 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		05C9ECBE13CC9B8000614016 /* CADemo-Info.plist */ = {isa = PBXFileReference; path = "CADemo-Info.plist"; sourceTree = "<group>"; };
+		05C9ECC013CC9B8000614016 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05C9ECC213CC9B8000614016 /* CADemo-Prefix.pch */ = {isa = PBXFileReference; path = "CADemo-Prefix.pch"; sourceTree = "<group>"; };
+		05C9ECC313CC9B8000614016 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05C9ECC513CC9B8000614016 /* CADemoAppDelegate.h */ = {isa = PBXFileReference; path = CADemoAppDelegate.h; sourceTree = "<group>"; };
+		05C9ECC613CC9B8000614016 /* CADemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADemoAppDelegate.m; sourceTree = "<group>"; };
+		05C9ECC913CC9B8000614016 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		05C9ECCB13CC9B8000614016 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		05C9ECCC13CC9B8000614016 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		05C9ECCF13CC9B8000614016 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		05C9ECD613CC9B8000614016 /* CADemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CADemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C9ECDE13CC9B8000614016 /* CADemoTests-Info.plist */ = {isa = PBXFileReference; path = "CADemoTests-Info.plist"; sourceTree = "<group>"; };
+		05C9ECE013CC9B8000614016 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05C9ECE213CC9B8000614016 /* CADemoTests-Prefix.pch */ = {isa = PBXFileReference; path = "CADemoTests-Prefix.pch"; sourceTree = "<group>"; };
+		05C9ECE313CC9B8000614016 /* CADemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADemoTests.h; sourceTree = "<group>"; };
+		05C9ECE513CC9B8000614016 /* CADemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05C9ECAF13CC9B8000614016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C9ECB713CC9B8000614016 /* UIKit.framework in Frameworks */,
+				05C9ECB913CC9B8000614016 /* Foundation.framework in Frameworks */,
+				05C9ECBB13CC9B8000614016 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C9ECD213CC9B8000614016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C9ECD713CC9B8000614016 /* UIKit.framework in Frameworks */,
+				05C9ECD813CC9B8000614016 /* Foundation.framework in Frameworks */,
+				05C9ECD913CC9B8000614016 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C9ECA713CC9B8000614016 = {
+			isa = PBXGroup;
+			children = (
+				05C9ECBC13CC9B8000614016 /* CADemo */,
+				05C9ECDC13CC9B8000614016 /* CADemoTests */,
+				05C9ECB513CC9B8000614016 /* Frameworks */,
+				05C9ECB313CC9B8000614016 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05C9ECB313CC9B8000614016 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05C9ECB213CC9B8000614016 /* CADemo.app */,
+				05C9ECD613CC9B8000614016 /* CADemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05C9ECB513CC9B8000614016 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05C9ECB613CC9B8000614016 /* UIKit.framework */,
+				05C9ECB813CC9B8000614016 /* Foundation.framework */,
+				05C9ECBA13CC9B8000614016 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05C9ECBC13CC9B8000614016 /* CADemo */ = {
+			isa = PBXGroup;
+			children = (
+				05C9ECC513CC9B8000614016 /* CADemoAppDelegate.h */,
+				05C9ECC613CC9B8000614016 /* CADemoAppDelegate.m */,
+				05C9ECC813CC9B8000614016 /* MainWindow.xib */,
+				05C9ECCB13CC9B8000614016 /* RootViewController.h */,
+				05C9ECCC13CC9B8000614016 /* RootViewController.m */,
+				05C9ECCE13CC9B8000614016 /* RootViewController.xib */,
+				05C9ECBD13CC9B8000614016 /* Supporting Files */,
+			);
+			path = CADemo;
+			sourceTree = "<group>";
+		};
+		05C9ECBD13CC9B8000614016 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C9ECBE13CC9B8000614016 /* CADemo-Info.plist */,
+				05C9ECBF13CC9B8000614016 /* InfoPlist.strings */,
+				05C9ECC213CC9B8000614016 /* CADemo-Prefix.pch */,
+				05C9ECC313CC9B8000614016 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05C9ECDC13CC9B8000614016 /* CADemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				05C9ECE313CC9B8000614016 /* CADemoTests.h */,
+				05C9ECE513CC9B8000614016 /* CADemoTests.m */,
+				05C9ECDD13CC9B8000614016 /* Supporting Files */,
+			);
+			path = CADemoTests;
+			sourceTree = "<group>";
+		};
+		05C9ECDD13CC9B8000614016 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C9ECDE13CC9B8000614016 /* CADemoTests-Info.plist */,
+				05C9ECDF13CC9B8000614016 /* InfoPlist.strings */,
+				05C9ECE213CC9B8000614016 /* CADemoTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05C9ECB113CC9B8000614016 /* CADemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C9ECE913CC9B8000614016 /* Build configuration list for PBXNativeTarget "CADemo" */;
+			buildPhases = (
+				05C9ECAE13CC9B8000614016 /* Sources */,
+				05C9ECAF13CC9B8000614016 /* Frameworks */,
+				05C9ECB013CC9B8000614016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CADemo;
+			productName = CADemo;
+			productReference = 05C9ECB213CC9B8000614016 /* CADemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05C9ECD513CC9B8000614016 /* CADemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C9ECEC13CC9B8000614016 /* Build configuration list for PBXNativeTarget "CADemoTests" */;
+			buildPhases = (
+				05C9ECD113CC9B8000614016 /* Sources */,
+				05C9ECD213CC9B8000614016 /* Frameworks */,
+				05C9ECD313CC9B8000614016 /* Resources */,
+				05C9ECD413CC9B8000614016 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C9ECDB13CC9B8000614016 /* PBXTargetDependency */,
+			);
+			name = CADemoTests;
+			productName = CADemoTests;
+			productReference = 05C9ECD613CC9B8000614016 /* CADemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05C9ECA913CC9B8000614016 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 05C9ECAC13CC9B8000614016 /* Build configuration list for PBXProject "CADemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05C9ECA713CC9B8000614016;
+			productRefGroup = 05C9ECB313CC9B8000614016 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05C9ECB113CC9B8000614016 /* CADemo */,
+				05C9ECD513CC9B8000614016 /* CADemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05C9ECB013CC9B8000614016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C9ECC113CC9B8000614016 /* InfoPlist.strings in Resources */,
+				05C9ECCA13CC9B8000614016 /* MainWindow.xib in Resources */,
+				05C9ECD013CC9B8000614016 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C9ECD313CC9B8000614016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C9ECE113CC9B8000614016 /* InfoPlist.strings in Resources */,
+				05C9ECE413CC9B8000614016 /* CADemoTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05C9ECD413CC9B8000614016 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05C9ECAE13CC9B8000614016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C9ECC413CC9B8000614016 /* main.m in Sources */,
+				05C9ECC713CC9B8000614016 /* CADemoAppDelegate.m in Sources */,
+				05C9ECCD13CC9B8000614016 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C9ECD113CC9B8000614016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C9ECE613CC9B8000614016 /* CADemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05C9ECDB13CC9B8000614016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C9ECB113CC9B8000614016 /* CADemo */;
+			targetProxy = 05C9ECDA13CC9B8000614016 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05C9ECBF13CC9B8000614016 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C9ECC013CC9B8000614016 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		05C9ECC813CC9B8000614016 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C9ECC913CC9B8000614016 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		05C9ECCE13CC9B8000614016 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C9ECCF13CC9B8000614016 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		05C9ECDF13CC9B8000614016 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C9ECE013CC9B8000614016 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05C9ECE713CC9B8000614016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		05C9ECE813CC9B8000614016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		05C9ECEA13CC9B8000614016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CADemo/CADemo-Prefix.pch";
+				INFOPLIST_FILE = "CADemo/CADemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		05C9ECEB13CC9B8000614016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CADemo/CADemo-Prefix.pch";
+				INFOPLIST_FILE = "CADemo/CADemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		05C9ECED13CC9B8000614016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CADemo.app/CADemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CADemoTests/CADemoTests-Prefix.pch";
+				INFOPLIST_FILE = "CADemoTests/CADemoTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		05C9ECEE13CC9B8000614016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CADemo.app/CADemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CADemoTests/CADemoTests-Prefix.pch";
+				INFOPLIST_FILE = "CADemoTests/CADemoTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05C9ECAC13CC9B8000614016 /* Build configuration list for PBXProject "CADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C9ECE713CC9B8000614016 /* Debug */,
+				05C9ECE813CC9B8000614016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C9ECE913CC9B8000614016 /* Build configuration list for PBXNativeTarget "CADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C9ECEA13CC9B8000614016 /* Debug */,
+				05C9ECEB13CC9B8000614016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05C9ECEC13CC9B8000614016 /* Build configuration list for PBXNativeTarget "CADemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C9ECED13CC9B8000614016 /* Debug */,
+				05C9ECEE13CC9B8000614016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05C9ECA913CC9B8000614016 /* Project object */;
+}

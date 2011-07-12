@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CADemoTests' target in the 'CADemoTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
