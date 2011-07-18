@@ -7,12 +7,20 @@
 //
 
 #import "RootViewController.h"
+#import "DemoViewController.h"
+#import "ScrollViewController.h"
 
 @implementation RootViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    menuList_ = [[NSArray arrayWithObjects:
+                  @"くるくる回転",
+                  @"めくれる",
+                  @"スクロール",
+                  nil] retain];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,7 +59,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [menuList_ count];
 }
 
 // Customize the appearance of table view cells.
@@ -65,6 +73,7 @@
     }
 
     // Configure the cell.
+    cell.textLabel.text = [menuList_ objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -111,13 +120,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	*/
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    switch (indexPath.row) {
+        case 0:
+        case 1:
+        {
+            DemoViewController *demoViewController = [[[DemoViewController alloc] initWithNibName:@"DemoViewController" bundle:nil] autorelease];
+            demoViewController.mode = indexPath.row;
+            [self.navigationController pushViewController:demoViewController animated:YES];
+            break;
+        }
+        case 2:
+        {
+            ScrollViewController *scrollViewController = [[[ScrollViewController alloc] initWithNibName:@"ScrollViewController" bundle:nil] autorelease];
+            [self.navigationController pushViewController:scrollViewController animated:YES];
+            break;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -130,6 +150,7 @@
 
 - (void)viewDidUnload
 {
+    [menuList_ release], menuList_ = nil;
     [super viewDidUnload];
 
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
@@ -138,6 +159,7 @@
 
 - (void)dealloc
 {
+    [menuList_ release], menuList_ = nil;
     [super dealloc];
 }
 
