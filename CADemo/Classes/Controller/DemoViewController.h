@@ -11,11 +11,8 @@
 
 @interface DemoViewController : UIViewController {
     IBOutlet UIImageView *imageView;
-    //IBOutlet UIBarButtonItem *goAnimationButton;
 }
 
 @property (nonatomic) NSInteger mode;
-
-//- (IBAction)tapGoAnimation:(id)sender;
 
 @end

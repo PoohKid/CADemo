@@ -14,7 +14,6 @@
 @end
 
 @interface DemoViewController (Private)
-//- (void)setGestureRecognizer;
 - (void)goAnimation;
 - (void)rollingAnimation;
 - (void)curlAnimation;
@@ -54,19 +53,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    imageView.image = [UIImage imageNamed:@"ya-gihu.jpg"];
 
-    //self.navigationItem.rightBarButtonItem = goAnimationButton;
+    imageView.image = [UIImage imageNamed:@"ya-gihu.jpg"];
 
     //self.tapGesture = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)] autorelease];
     //[imageView addGestureRecognizer:tapGesture]; //効かない！？
-    //[self.view addGestureRecognizer:tapGesture];
-    //[self performSelector:@selector(setGestureRecognizer) withObject:nil afterDelay:1.0f]; //NG, Delayかけてもダメ
+    //[self.view addGestureRecognizer:tapGesture]; //こっちはOK
 
-    //[self performSelector:@selector(curlAnimation)]; //回転はできたがpageCurlはDidLoadから直接呼んでもImageViewが画像を描画しておらずNG
-    //[self performSelector:@selector(curlAnimation) withObject:nil afterDelay:1.0f]; //DelayをかければOK
-
-    [self performSelector:@selector(goAnimation) withObject:nil afterDelay:0.1f];
+    [self performSelector:@selector(goAnimation) withObject:nil afterDelay:0.1f]; //DelayしないとpageCurlで元画像が表示されない
 }
 
 - (void)viewDidUnload
@@ -84,11 +78,6 @@
 }
 
 #pragma mark - Private methods
-
-//- (void)setGestureRecognizer
-//{
-//    [imageView addGestureRecognizer:tapGesture];
-//}
 
 - (void)goAnimation
 {
@@ -141,20 +130,6 @@
 }
 
 #pragma mark - IBAction methods
-
-//- (IBAction)tapGoAnimation:(id)sender
-//{
-//    //[imageView addGestureRecognizer:tapGesture]; //タイミング変えてもダメ
-//
-//    switch (mode) {
-//        case 0: //くるくる回転
-//            [self performSelector:@selector(rollingAnimation)];
-//            break;
-//        case 1: //めくれる
-//            [self performSelector:@selector(curlAnimation)];
-//            break;
-//    }
-//}
 
 #pragma mark - Touch handling
 
