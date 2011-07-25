@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface DemoViewController : UIViewController {
+@interface DemoViewController : UIViewController <UIGestureRecognizerDelegate> {
     IBOutlet UIImageView *imageView;
 }
 

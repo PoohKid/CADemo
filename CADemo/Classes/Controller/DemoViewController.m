@@ -53,12 +53,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+<<<<<<< HEAD
+=======
+    imageView.image = [UIImage imageNamed:@"background.jpg"];
+>>>>>>> 画像差し替え、README追加、など
 
     imageView.image = [UIImage imageNamed:@"ya-gihu.jpg"];
 
     //self.tapGesture = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)] autorelease];
+<<<<<<< HEAD
     //[imageView addGestureRecognizer:tapGesture]; //効かない！？
     //[self.view addGestureRecognizer:tapGesture]; //こっちはOK
+=======
+    //[imageView addGestureRecognizer:tapGesture]; //効かない！？ -> userInteractionEnabled = YES が必要！
+    //[self.view addGestureRecognizer:tapGesture];
+    //[self performSelector:@selector(setGestureRecognizer) withObject:nil afterDelay:1.0f]; //NG, Delayかけてもダメ
+
+    //[self performSelector:@selector(curlAnimation)]; //回転はできたがpageCurlはDidLoadから直接呼んでもImageViewが画像を描画しておらずNG
+    //[self performSelector:@selector(curlAnimation) withObject:nil afterDelay:1.0f]; //DelayをかければOK
+>>>>>>> 画像差し替え、README追加、など
 
     [self performSelector:@selector(goAnimation) withObject:nil afterDelay:0.1f]; //DelayしないとpageCurlで元画像が表示されない
 }
@@ -96,7 +109,7 @@
     //UIView.transform は CGAffineTransform で、CALayer.transform は CATransform3D ?
     CAKeyframeAnimation *rollingAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     rollingAnimation.duration = 1.0;
-    rollingAnimation.repeatCount = 1e100f; //無限
+    rollingAnimation.repeatCount = FLT_MAX; // 1e100f; //無限
     rollingAnimation.values = [[[NSArray alloc] initWithObjects:
                                 [NSValue valueWithCATransform3D:CATransform3DIdentity],
                                 [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI * 90 / 180.0f, 0, 0, 1.0f)],
@@ -114,7 +127,7 @@
     CATransition *transition = [CATransition animation];
     [transition setType:@"pageCurl"]; //逆はpageUnCurl, mapCurlは不可
     transition.duration = 1.0;
-    transition.repeatCount = 1e100f; //無限
+    transition.repeatCount = FLT_MAX; // 1e100f; //無限
     //transition.repeatCount = 0.5f; //効かない？
     //transition.startProgress = 0.5; //逆にする場合
     transition.endProgress = 0.5;

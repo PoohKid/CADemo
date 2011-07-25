@@ -36,7 +36,6 @@
 		050CDA6D13CEAD32001F7E81 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 050CDA6A13CEAD32001F7E81 /* RootViewController.xib */; };
 		050CDA7213CEADA1001F7E81 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050CDA6F13CEADA1001F7E81 /* DemoViewController.m */; };
 		050CDA7313CEADA1001F7E81 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050CDA7113CEADA1001F7E81 /* RootViewController.m */; };
-		050CDA7513CEADD5001F7E81 /* ya-gihu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 050CDA7413CEADD5001F7E81 /* ya-gihu.jpg */; };
 		054D7AD713CEB13C0047A816 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D7AD513CEB13C0047A816 /* ScrollViewController.m */; };
 		054D7ADB13CEB1D80047A816 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054D7ADA13CEB1D80047A816 /* ScrollViewController.xib */; };
 		054D7AE613CEB5470047A816 /* arrow_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 054D7AE413CEB5470047A816 /* arrow_left.gif */; };
@@ -54,6 +53,8 @@
 		05C9ECE413CC9B8000614016 /* CADemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 05C9ECE313CC9B8000614016 /* CADemoTests.h */; };
 		05C9ECE613CC9B8000614016 /* CADemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C9ECE513CC9B8000614016 /* CADemoTests.m */; };
 		05E0AB5413CDA76E001F2CE9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E0AB5313CDA76E001F2CE9 /* QuartzCore.framework */; };
+		84154A6B13DD6FB3006B94EF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84154A6A13DD6FB3006B94EF /* README.md */; };
+		84BE970C13D80E8800A8AD2F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84BE970B13D80E8800A8AD2F /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +99,6 @@
 		050CDA6F13CEADA1001F7E81 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		050CDA7013CEADA1001F7E81 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		050CDA7113CEADA1001F7E81 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		050CDA7413CEADD5001F7E81 /* ya-gihu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ya-gihu.jpg"; sourceTree = "<group>"; };
 		054D7AD413CEB13C0047A816 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		054D7AD513CEB13C0047A816 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		054D7ADA13CEB1D80047A816 /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
@@ -121,6 +121,8 @@
 		05C9ECE313CC9B8000614016 /* CADemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADemoTests.h; sourceTree = "<group>"; };
 		05C9ECE513CC9B8000614016 /* CADemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADemoTests.m; sourceTree = "<group>"; };
 		05E0AB5313CDA76E001F2CE9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84154A6A13DD6FB3006B94EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		84BE970B13D80E8800A8AD2F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,10 +201,10 @@
 		050CDA3513CEABB5001F7E81 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				84BE970B13D80E8800A8AD2F /* background.jpg */,
 				050CDA3613CEABB5001F7E81 /* Cities */,
 				054D7AE413CEB5470047A816 /* arrow_left.gif */,
 				054D7AE513CEB5470047A816 /* arrow_right.gif */,
-				050CDA7413CEADD5001F7E81 /* ya-gihu.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -241,6 +243,7 @@
 		05C9ECA713CC9B8000614016 = {
 			isa = PBXGroup;
 			children = (
+				84154A6A13DD6FB3006B94EF /* README.md */,
 				05C9ECBC13CC9B8000614016 /* CADemo */,
 				05C9ECDC13CC9B8000614016 /* CADemoTests */,
 				05C9ECB513CC9B8000614016 /* Frameworks */,
@@ -407,10 +410,11 @@
 				050CDA6B13CEAD32001F7E81 /* DemoViewController.xib in Resources */,
 				050CDA6C13CEAD32001F7E81 /* MainWindow.xib in Resources */,
 				050CDA6D13CEAD32001F7E81 /* RootViewController.xib in Resources */,
-				050CDA7513CEADD5001F7E81 /* ya-gihu.jpg in Resources */,
 				054D7ADB13CEB1D80047A816 /* ScrollViewController.xib in Resources */,
 				054D7AE613CEB5470047A816 /* arrow_left.gif in Resources */,
 				054D7AE713CEB5470047A816 /* arrow_right.gif in Resources */,
+				84BE970C13D80E8800A8AD2F /* background.jpg in Resources */,
+				84154A6B13DD6FB3006B94EF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
