@@ -53,25 +53,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-<<<<<<< HEAD
-=======
-    imageView.image = [UIImage imageNamed:@"background.jpg"];
->>>>>>> 画像差し替え、README追加、など
 
-    imageView.image = [UIImage imageNamed:@"ya-gihu.jpg"];
+    imageView.image = [UIImage imageNamed:@"background.jpg"];
 
     //self.tapGesture = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)] autorelease];
-<<<<<<< HEAD
-    //[imageView addGestureRecognizer:tapGesture]; //効かない！？
-    //[self.view addGestureRecognizer:tapGesture]; //こっちはOK
-=======
     //[imageView addGestureRecognizer:tapGesture]; //効かない！？ -> userInteractionEnabled = YES が必要！
     //[self.view addGestureRecognizer:tapGesture];
     //[self performSelector:@selector(setGestureRecognizer) withObject:nil afterDelay:1.0f]; //NG, Delayかけてもダメ
-
-    //[self performSelector:@selector(curlAnimation)]; //回転はできたがpageCurlはDidLoadから直接呼んでもImageViewが画像を描画しておらずNG
-    //[self performSelector:@selector(curlAnimation) withObject:nil afterDelay:1.0f]; //DelayをかければOK
->>>>>>> 画像差し替え、README追加、など
 
     [self performSelector:@selector(goAnimation) withObject:nil afterDelay:0.1f]; //DelayしないとpageCurlで元画像が表示されない
 }
