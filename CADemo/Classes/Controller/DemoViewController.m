@@ -17,6 +17,7 @@
 - (void)goAnimation;
 - (void)rollingAnimation;
 - (void)curlAnimation;
+- (void)blinkAnimation;
 @end
 
 @implementation DemoViewController
@@ -89,6 +90,9 @@
         case 1: //めくれる
             [self curlAnimation];
             break;
+        case 2: //点滅
+            [self blinkAnimation];
+            break;
     }
 }
 
@@ -128,6 +132,19 @@
 
     //めくれる感じのModalTransition
     //http://appteam.blog114.fc2.com/blog-entry-135.html
+}
+
+- (void)blinkAnimation
+{
+    CAKeyframeAnimation *blinkAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    blinkAnimation.duration = 2.0f;
+    blinkAnimation.repeatCount = FLT_MAX;
+    blinkAnimation.values = [[[NSArray alloc] initWithObjects:
+                              [NSNumber numberWithFloat:1.0f],
+                              [NSNumber numberWithFloat:1.0f],
+                              [NSNumber numberWithFloat:1.0f],
+                              nil] autorelease];
+    [imageView.layer addAnimation:blinkAnimation forKey:@"blink"];
 }
 
 #pragma mark - IBAction methods

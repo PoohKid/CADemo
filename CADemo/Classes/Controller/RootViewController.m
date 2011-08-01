@@ -19,6 +19,7 @@
     menuList_ = [[NSArray arrayWithObjects:
                   @"くるくる回転",
                   @"めくれる",
+                  @"点滅",
                   @"スクロール",
                   nil] retain];
 }
@@ -125,13 +126,14 @@
     switch (indexPath.row) {
         case 0:
         case 1:
+        case 2:
         {
             DemoViewController *demoViewController = [[[DemoViewController alloc] initWithNibName:@"DemoViewController" bundle:nil] autorelease];
             demoViewController.mode = indexPath.row;
             [self.navigationController pushViewController:demoViewController animated:YES];
             break;
         }
-        case 2:
+        case 3:
         {
             ScrollViewController *scrollViewController = [[[ScrollViewController alloc] initWithNibName:@"ScrollViewController" bundle:nil] autorelease];
             [self.navigationController pushViewController:scrollViewController animated:YES];
