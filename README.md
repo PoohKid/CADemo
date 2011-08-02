@@ -12,7 +12,8 @@ CATransitionのTypeに"pageCurl"を指定して途中までのページめくり
 問題はPageCurlがアンドキュメントという事です。
 
 ## 点滅
-まだうまくうごかない＞＜
+CAKeyframeAnimationによりopacity値を変更させることで点滅させます。
+対象がViewではなくLayerなため、alphaではなくopacityなことがポイント。
 
 ## スクロール
 UIScrollViewを利用した選択画面サンプルです。

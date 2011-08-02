@@ -141,7 +141,7 @@
     blinkAnimation.repeatCount = FLT_MAX;
     blinkAnimation.values = [[[NSArray alloc] initWithObjects:
                               [NSNumber numberWithFloat:1.0f],
-                              [NSNumber numberWithFloat:1.0f],
+                              [NSNumber numberWithFloat:0.3f],
                               [NSNumber numberWithFloat:1.0f],
                               nil] autorelease];
     [imageView.layer addAnimation:blinkAnimation forKey:@"blink"];
