@@ -18,6 +18,7 @@
 - (void)rollingAnimation;
 - (void)curlAnimation;
 - (void)blinkAnimation;
+- (void)randomAnimation;
 @end
 
 @implementation DemoViewController
@@ -54,6 +55,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    srand([[NSDate date] timeIntervalSinceReferenceDate]);
 
     imageView.image = [UIImage imageNamed:@"background.jpg"];
 
@@ -92,6 +95,9 @@
             break;
         case 2: //点滅
             [self blinkAnimation];
+            break;
+        case 3: //ランダム
+            [self randomAnimation];
             break;
     }
 }
@@ -145,6 +151,31 @@
                               [NSNumber numberWithFloat:1.0f],
                               nil] autorelease];
     [imageView.layer addAnimation:blinkAnimation forKey:@"blink"];
+}
+
+- (void)randomAnimation
+{
+    //NSLog(@"cx: %f, cy: %f", imageView.center.x, imageView.center.y); //cx: 160.000000, cy: 218.000000
+
+    int min = -50;
+    int max = 50;
+    int vx = min + (int)(rand() * (max - min + 1.0) / (1.0 + RAND_MAX));
+    int vy = min + (int)(rand() * (max - min + 1.0) / (1.0 + RAND_MAX));
+
+    //NSLog(@"vx: %d, vy: %d", vx, vy);
+
+    [UIView animateWithDuration:0.5f
+                          delay:0
+                        options:UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+                         imageView.center = CGPointMake(160 + vx, 218 + vy);
+                     }
+                     completion:^(BOOL finished){
+                         //NSLog(@"finished: %d", finished);
+                         if (finished) {
+                             [self randomAnimation];
+                         }
+                     }];
 }
 
 #pragma mark - IBAction methods

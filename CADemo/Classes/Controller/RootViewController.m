@@ -20,6 +20,7 @@
                   @"くるくる回転",
                   @"めくれる",
                   @"点滅",
+                  @"ランダム",
                   @"スクロール",
                   nil] retain];
 }
@@ -127,13 +128,14 @@
         case 0:
         case 1:
         case 2:
+        case 3:
         {
             DemoViewController *demoViewController = [[[DemoViewController alloc] initWithNibName:@"DemoViewController" bundle:nil] autorelease];
             demoViewController.mode = indexPath.row;
             [self.navigationController pushViewController:demoViewController animated:YES];
             break;
         }
-        case 3:
+        default:
         {
             ScrollViewController *scrollViewController = [[[ScrollViewController alloc] initWithNibName:@"ScrollViewController" bundle:nil] autorelease];
             [self.navigationController pushViewController:scrollViewController animated:YES];
