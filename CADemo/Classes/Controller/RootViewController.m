@@ -21,6 +21,7 @@
                   @"めくれる",
                   @"点滅",
                   @"ランダム",
+                  @"スポットライト",
                   @"スクロール",
                   nil] retain];
 }
@@ -129,6 +130,7 @@
         case 1:
         case 2:
         case 3:
+        case 4:
         {
             DemoViewController *demoViewController = [[[DemoViewController alloc] initWithNibName:@"DemoViewController" bundle:nil] autorelease];
             demoViewController.mode = indexPath.row;

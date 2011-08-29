@@ -19,6 +19,7 @@
 - (void)curlAnimation;
 - (void)blinkAnimation;
 - (void)randomAnimation;
+- (void)spotlightAnimation;
 @end
 
 @implementation DemoViewController
@@ -99,6 +100,9 @@
         case 3: //ランダム
             [self randomAnimation];
             break;
+        case 4: //スポットライト
+            [self spotlightAnimation];
+            break;
     }
 }
 
@@ -176,6 +180,37 @@
                              [self randomAnimation];
                          }
                      }];
+}
+
+- (void)spotlightAnimation
+{
+    //完全に表示するための円の直径
+    float diameter = sqrtf(powf(imageView.bounds.size.width, 2) + powf(imageView.bounds.size.height, 2));
+    diameter = ceilf(diameter);   //切り上げ
+    if ((int)diameter % 2 != 0) { //偶数化
+        diameter += 1;
+    }
+    CGRect maskFrame = CGRectMake(0 - (diameter - imageView.bounds.size.width)/2,
+                                  0 - (diameter - imageView.bounds.size.height)/2,
+                                  diameter, diameter);
+
+    //スポットライト用のマスク描画
+    CALayer *maskLayer = [CALayer layer];
+    maskLayer.frame = maskFrame;
+    UIGraphicsBeginImageContext(maskLayer.frame.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextFillEllipseInRect(context, CGRectMake(0, 0, diameter, diameter));
+    maskLayer.contents = (id)[UIGraphicsGetImageFromCurrentImageContext() CGImage];
+    UIGraphicsEndImageContext();
+    imageView.layer.mask = maskLayer;
+
+    //アニメーション：マスクを1/10から1/1に変形
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    animation.duration = 1.0f;
+    animation.repeatCount = FLT_MAX;
+    animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 1)];
+    animation.toValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+    [maskLayer addAnimation:animation forKey:@"spotlight"];
 }
 
 #pragma mark - IBAction methods
